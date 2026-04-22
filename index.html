@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eyuel | Software Engineering Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of a software engineering student who loves mathematics and anime-inspired design."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-lines" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="logo" href="#home">EYUEL</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="mainNav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero section reveal">
+        <p class="tag">Software Engineering Student</p>
+        <h1>
+          Building precise code with a
+          <span>math brain</span> and anime energy.
+        </h1>
+        <p class="lead">
+          I design and build clean web apps, solve algorithmic problems, and
+          turn ideas into projects with clear logic and strong visuals.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">See Projects</a>
+          <a href="#contact" class="btn ghost">Let’s Connect</a>
+        </div>
+        <div class="stats">
+          <article>
+            <h3>12+</h3>
+            <p>student projects</p>
+          </article>
+          <article>
+            <h3>150+</h3>
+            <p>math challenges solved</p>
+          </article>
+          <article>
+            <h3>4</h3>
+            <p>main tech stacks</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about section reveal">
+        <div class="section-head">
+          <h2>About Me</h2>
+          <p>Code, calculus, and character-driven creativity.</p>
+        </div>
+        <div class="about-grid">
+          <article class="card">
+            <h3>Who I Am</h3>
+            <p>
+              I’m a software engineering student focused on full-stack web
+              development. I enjoy turning complex problems into simple, useful
+              products.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Math Mindset</h3>
+            <p>
+              Mathematics trains my thinking: structure first, then elegance.
+              I use that mindset in algorithms, clean architecture, and smart
+              debugging.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Anime Influence</h3>
+            <p>
+              Anime inspires my visual taste: dynamic lines, strong contrast,
+              bold typography, and details that make interfaces feel alive.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section reveal">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p>Tools I use to build and learn fast.</p>
+        </div>
+        <div class="chips">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Git & GitHub</span>
+          <span>Data Structures</span>
+          <span>Discrete Math</span>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="section-head">
+          <h2>Featured Projects</h2>
+          <p>Simple, practical builds with clear outcomes.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <p class="project-type">Web App</p>
+            <h3>Study Sprint</h3>
+            <p>
+              A focus timer and task tracker that helps students structure
+              study sessions and measure consistency.
+            </p>
+            <a href="#" aria-label="View Study Sprint project">View project</a>
+          </article>
+          <article class="project-card">
+            <p class="project-type">Algorithm Tool</p>
+            <h3>Math Quest Solver</h3>
+            <p>
+              A mini JavaScript tool for solving and visualizing number theory
+              and sequence exercises.
+            </p>
+            <a href="#" aria-label="View Math Quest Solver project"
+              >View project</a
+            >
+          </article>
+          <article class="project-card">
+            <p class="project-type">Portfolio UI</p>
+            <h3>Anime Panel Layout</h3>
+            <p>
+              A responsive component library inspired by manga frames with
+              modern accessibility standards.
+            </p>
+            <a href="#" aria-label="View Anime Panel Layout project"
+              >View project</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact reveal">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Let’s build something useful and exciting.</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label>
+            Name
+            <input type="text" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Message
+            <textarea
+              rows="4"
+              placeholder="Write your message..."
+              required
+            ></textarea>
+          </label>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Eyuel Mohammed. Built with HTML, CSS, and JS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
